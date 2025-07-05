@@ -1,0 +1,39 @@
+2025-07-05T08:00:12Z Host=DC-01 Source=Microsoft-Windows-Security-Auditing EventID=4624 Account="CORP\admin.user" LogonType=3 Workstation="WS-LON-01"
+2025-07-05T08:02:08Z Host=DC-01 Source=Microsoft-Windows-Security-Auditing EventID=4670 Account="CORP\admin.user" ObjectName="C:\Windows\System32\config\SAM" AccessMask=268435456
+2025-07-05T08:05:33Z Host=WS-LON-02 Source=Microsoft-Windows-Security-Auditing EventID=4625 Account="CORP\svc_backup" FailureReason="Unknown user name or bad password"
+2025-07-05T08:07:50Z Host=WS-LON-02 Source=Microsoft-Windows-Security-Auditing EventID=4624 Account="CORP\svc_backup" LogonType=5 AuthenticationPackage="NTLM"
+2025-07-05T08:10:15Z Host=FS-STORE Source=Microsoft-Windows-Security-Auditing EventID=5140 Account="CORP\j.smith" ShareName="\\\\FS-STORE\\Public" AccessMask=1179785
+2025-07-05T08:12:27Z Host=FS-STORE Source=Microsoft-Windows-Security-Auditing EventID=5145 Account="CORP\j.smith" ShareName="\\\\FS-STORE\\Finance" AccessMask=2032127
+2025-07-05T08:15:01Z Host=WS-NY-01 Source=Microsoft-Windows-Security-Auditing EventID=4688 NewProcess="powershell.exe" CreatorProcess="explorer.exe"
+2025-07-05T08:15:05Z Host=WS-NY-01 Source=Microsoft-Windows-Security-Auditing EventID=4672 Account="CORP\analyst" Privileges="SeChangeNotifyPrivilege"
+2025-07-05T08:18:44Z Host=WS-NY-02 Source=Microsoft-Windows-Security-Auditing EventID=4663 Account="CORP\analyst" ObjectName="C:\\Data\\report.xlsx" AccessMask=1179785
+2025-07-05T08:20:58Z Host=WS-NY-02 Source=Microsoft-Windows-Security-Auditing EventID=4670 Account="CORP\analyst" ObjectName="C:\\Data\\report.xlsx" AccessMask=268435456
+2025-07-05T08:25:30Z Host=DMZ-01 Source=Microsoft-Windows-Security-Auditing EventID=4624 Account="CORP\service.dmz" LogonType=3 Workstation="DMZ-01"
+2025-07-05T08:27:12Z Host=DMZ-01 Source=Microsoft-Windows-Security-Auditing EventID=4648 Account="CORP\service.dmz" TargetAccount="CORP\svc_app" Process="app.exe"
+2025-07-05T08:30:45Z Host=WEB-02 Source=Microsoft-Windows-Security-Auditing EventID=1102 Account="CORP\admin.user" Description="The audit log was cleared."
+2025-07-05T08:35:22Z Host=WEB-02 Source=Microsoft-Windows-Security-Auditing EventID=4624 Account="CORP\webuser" LogonType=2 AuthenticationPackage="Kerberos"
+2025-07-05T08:37:58Z Host=WEB-02 Source=Microsoft-Windows-Security-Auditing EventID=4673 PrivilegeList="SeImpersonatePrivilege" Account="CORP\webuser"
+2025-07-05T08:40:11Z Host=DB-CLUSTER Source=Microsoft-Windows-Security-Auditing EventID=4625 Account="CORP\sqladmin" FailureReason="Account locked out"
+2025-07-05T08:42:33Z Host=DB-CLUSTER Source=Microsoft-Windows-Security-Auditing EventID=4624 Account="CORP\sqladmin" LogonType=3 Workstation="DB-CLUSTER"
+2025-07-05T08:45:27Z Host=DB-CLUSTER Source=Microsoft-Windows-Security-Auditing EventID=1102 Account="CORP\security" Description="The audit log was cleared."
+2025-07-05T08:50:59Z Host=WS-ASIA-01 Source=Microsoft-Windows-Security-Auditing EventID=4688 NewProcess="mimikatz.exe" CreatorProcess="powershell.exe"
+2025-07-05T08:51:03Z Host=WS-ASIA-01 Source=Microsoft-Windows-Security-Auditing EventID=4672 Account="CORP\attacker" Privileges="SeDebugPrivilege,SeTcbPrivilege"
+2025-07-05T08:55:44Z Host=FS-ENG Source=Microsoft-Windows-Security-Auditing EventID=5142 Account="CORP\user.eng" ShareName="\\\\FS-ENG\\Projects" AccessMask=1179785
+2025-07-05T08:57:12Z Host=FS-ENG Source=Microsoft-Windows-Security-Auditing EventID=5145 Account="CORP\user.eng" ShareName="\\\\FS-ENG\\Projects" AccessMask=2032127
+2025-07-05T09:00:00Z Host=WS-ENG-03 Source=Microsoft-Windows-FilteringPlatform-WEP EventID=2004 Description="A callout driver is required to allow network traffic."
+2025-07-05T09:05:17Z Host=WS-ENG-03 Source=Microsoft-Windows-Security-Auditing EventID=4689 PreviousProcess="powershell.exe"
+2025-07-05T09:10:29Z Host=WS-ENG-03 Source=Microsoft-Windows-Security-Auditing EventID=4674 Account="CORP\svc_monitor" Privileges="SeImpersonatePrivilege"
+2025-07-05T09:15:45Z Host=WS-ENG-04 Source=Microsoft-Windows-Security-Auditing EventID=4624 Account="CORP\security" LogonType=3 AuthenticationPackage="NTLM"
+2025-07-05T09:17:21Z Host=WS-ENG-04 Source=Microsoft-Windows-Security-Auditing EventID=4634 Account="CORP\security" LogonType=3
+2025-07-05T09:20:33Z Host=FS-LON Source=Microsoft-Windows-Security-Auditing EventID=5140 Account="CORP\j.lee" ShareName="\\\\FS-LON\\Archive" AccessMask=1179785
+2025-07-05T09:25:01Z Host=FS-LON Source=Microsoft-Windows-Security-Auditing EventID=5145 Account="CORP\j.lee" ShareName="\\\\FS-LON\\Archive" AccessMask=2032127
+2025-07-05T09:30:15Z Host=DC-02 Source=Microsoft-Windows-Security-Auditing EventID=4720 Account="CORP\admin.user" TargetAccount="CORP\new_employee"
+2025-07-05T09:35:42Z Host=DC-02 Source=Microsoft-Windows-Security-Auditing EventID=4722 Account="CORP\new_employee" Description="Account enabled."
+2025-07-05T09:40:07Z Host=DC-02 Source=Microsoft-Windows-Security-Auditing EventID=4723 Account="CORP\new_employee" Detail="Attempt to change password"
+2025-07-05T09:45:39Z Host=DC-02 Source=Microsoft-Windows-Security-Auditing EventID=4724 Account="CORP\new_employee" Detail="Password reset by admin"
+2025-07-05T09:50:55Z Host=WS-ENG-05 Source=Microsoft-Windows-Security-Auditing EventID=4675 PrivilegeList="SeTakeOwnershipPrivilege" Account="CORP\poweruser"
+2025-07-05T09:55:12Z Host=WS-ENG-05 Source=Microsoft-Windows-Security-Auditing EventID=4648 Account="CORP\poweruser" TargetAccount="CORP\backup.user" Process="backup.exe"
+2025-07-05T10:00:00Z Host=WS-LON-01 Source=Microsoft-Windows-Security-Auditing EventID=4688 NewProcess="notepad.exe" CreatorProcess="explorer.exe"
+2025-07-05T10:05:27Z Host=WS-LON-01 Source=Microsoft-Windows-Security-Auditing EventID=4674 Account="CORP\j.smith" Privileges="SeLoadDriverPrivilege"
+2025-07-05T10:10:55Z Host=FS-SEA Source=Microsoft-Windows-Security-Auditing EventID=5142 Account="CORP\guest" ShareName="\\\\FS-SEA\\Public" AccessMask=1179785
+2025-07-05T10:15:39Z Host=FS-SEA Source=Microsoft-Windows-Security-Auditing EventID=5145 Account="CORP\guest" ShareName="\\\\FS-SEA\\Public" AccessMask=2032127
