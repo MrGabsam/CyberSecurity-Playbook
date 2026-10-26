@@ -1,0 +1,13 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const dir = path.join(__dirname, 'build-parts');
+const parts = fs.readdirSync(dir).filter(n => /^part-\\d{3}\\.txt$/.test(n)).sort();
+if (parts.length !== 17) throw new Error('Missing CISSP source parts: ' + parts.length);
+const html = Buffer.concat(parts.map(n => fs.readFileSync(path.join(dir, n))));
+const expected = '21957105c27386fa2746f4e6e632cf93a348becfa6609c5c6d43799bd0d96d15';
+const actual = crypto.createHash('sha256').update(html).digest('hex');
+if (actual !== expected) throw new Error('CISSP source checksum mismatch. Expected '+expected+' got '+actual);
+fs.mkdirSync(path.join(__dirname,'public'), {recursive:true});
+fs.writeFileSync(path.join(__dirname,'public','index.html'),html);
+console.log('Validated CISSP Decision Lab',html.length,'bytes, SHA256',actual);
